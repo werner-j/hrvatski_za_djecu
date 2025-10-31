@@ -1,8 +1,7 @@
 \documentclass[11pt,a4paper,twoside]{book}
 
-% Language and encoding
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
+% Language and encoding (for XeLaTeX)
+\usepackage{fontspec}
 \usepackage[croatian,german]{babel}
 
 % Page layout
@@ -34,7 +33,7 @@
     linkcolor=blue,
     filecolor=magenta,
     urlcolor=cyan,
-    pdftitle={Hrvatski za Djecu - Croatian for Children},
+    pdftitle={Hrvatski za Djecu - Kroatisch für Kinder},
     pdfauthor={Werner J.},
 }
 
@@ -83,8 +82,8 @@
 
 % Title information
 \title{\Huge\textbf{Hrvatski za Djecu}\\[0.5cm]
-\Large Croatian for German-Speaking Children\\[0.3cm]
-\large A One-Year Course for Ages 8-11}
+\Large Kroatisch für deutschsprachige Kinder\\[0.3cm]
+\large Ein Einjahres-Kurs für Kinder von 8-11 Jahren}
 \author{Werner J.}
 \date{\today}
 
@@ -100,8 +99,8 @@
 \textcopyright{} 2025 Werner J.\\[0.5cm]
 This work is licensed under the GNU General Public License v3.0\\
 See LICENSE file for details.\\[1cm]
-\textit{Hrvatski za Djecu - Croatian for Children}\\
-A comprehensive one-year course designed for German-speaking students aged 8-11.
+\textit{Hrvatski za Djecu - Kroatisch für Kinder}\\
+Ein umfassender Einjahres-Kurs für deutschsprachige Schüler im Alter von 8-11 Jahren.
 \end{center}
 \vspace*{\fill}
 \clearpage
@@ -111,27 +110,23 @@ A comprehensive one-year course designed for German-speaking students aged 8-11.
 \clearpage
 
 % Preface
-\chapter*{Preface / Vorwort}
-\addcontentsline{toc}{chapter}{Preface / Vorwort}
+\chapter*{Vorwort}
+\addcontentsline{toc}{chapter}{Vorwort}
 
-\section*{To Students / An die Schüler}
-Welcome to \textit{Hrvatski za Djecu}! This book will guide you through an exciting journey of learning Croatian, a beautiful South Slavic language spoken by millions of people in Croatia and around the world.
-
+\section*{An die Schüler}
 Willkommen bei \textit{Hrvatski za Djecu}! Dieses Buch führt dich durch eine spannende Reise beim Lernen von Kroatisch, einer wunderschönen südslawischen Sprache, die von Millionen Menschen in Kroatien und auf der ganzen Welt gesprochen wird.
 
-\section*{To Teachers and Parents / An Lehrer und Eltern}
-This course is designed for 5th grade Gymnasium students (ages 8-11) with German as their primary language. The curriculum covers not only language skills but also Croatian culture, history, traditions, geography, and notable people. Each unit is designed for approximately three weeks of instruction.
-
+\section*{An Lehrer und Eltern}
 Dieser Kurs ist für Schüler der 5. Klasse des Gymnasiums (8-11 Jahre) mit Deutsch als Muttersprache konzipiert. Der Lehrplan umfasst nicht nur Sprachkenntnisse, sondern auch kroatische Kultur, Geschichte, Traditionen, Geographie und bemerkenswerte Persönlichkeiten. Jede Einheit ist für etwa drei Wochen Unterricht konzipiert.
 
-\section*{How to Use This Book / Wie man dieses Buch benutzt}
+\section*{Wie man dieses Buch benutzt}
 \begin{itemize}
-    \item Each chapter represents one unit (3 weeks of instruction)
-    \item Vocabulary is presented with German translations
-    \item Grammar explanations are provided in both Croatian and German
-    \item Cultural sections introduce Croatian life and traditions
-    \item Exercises are provided at the end of each section
-    \item Audio materials (referenced in the text) should be used alongside this book
+    \item Jedes Kapitel stellt eine Einheit dar (3 Wochen Unterricht)
+    \item Vokabular wird mit deutschen Übersetzungen präsentiert
+    \item Grammatikerklärungen werden auf Kroatisch und Deutsch bereitgestellt
+    \item Kulturelle Abschnitte stellen das kroatische Leben und die Traditionen vor
+    \item Übungen werden am Ende jedes Abschnitts bereitgestellt
+    \item Audiomaterialien (im Text referenziert) sollten zusammen mit diesem Buch verwendet werden
 \end{itemize}
 
 \clearpage
@@ -152,19 +147,19 @@ Dieser Kurs ist für Schüler der 5. Klasse des Gymnasiums (8-11 Jahre) mit Deut
 
 % Appendices
 \appendix
-\chapter{Pronunciation Guide / Ausspracheführer}
+\chapter{Ausspracheführer}
 \input{resources/pronunciation_guide}
 
-\chapter{Grammar Reference / Grammatik-Referenz}
+\chapter{Grammatik-Referenz}
 \input{resources/grammar_reference}
 
-\chapter{Vocabulary List / Wortschatzliste}
+\chapter{Wortschatzliste}
 \input{resources/vocabulary_list}
 
-\chapter{Answer Key / Lösungsschlüssel}
+\chapter{Lösungsschlüssel}
 \input{resources/answer_key}
 
-\chapter{Croatian-German / German-Croatian Dictionary}
+\chapter{Kroatisch-Deutsch / Deutsch-Kroatisch Wörterbuch}
 \input{resources/dictionary}
 
 \end{document}
