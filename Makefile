@@ -5,8 +5,8 @@ all: main.pdf
 
 # Compile the LaTeX document
 main.pdf: main.tex chapters/*.tex resources/*.tex
-	pdflatex main.tex
-	pdflatex main.tex
+	xelatex main.tex
+	xelatex main.tex
 
 # Clean auxiliary files
 clean:
