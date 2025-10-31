@@ -95,6 +95,15 @@ make view     # Open the PDF (requires PDF viewer)
 
 This course is being developed in sprints. See the [Issues](../../issues) section for current development tasks organized by unit and content type.
 
+### Creating Development Issues
+
+All development tasks are documented in [ISSUES.md](ISSUES.md). To create these issues in GitHub:
+
+1. **Automated** (recommended): Run `python3 create_issues.py` after authenticating with GitHub CLI
+2. **Manual**: Follow the instructions in [HOW_TO_CREATE_ISSUES.md](HOW_TO_CREATE_ISSUES.md)
+
+This will create 36+ issues organized into 12 sprints covering all aspects of course development.
+
 ### Development Sprints
 
 1. **Sprint 1-3**: Units 1-3 (Welcome, Family, Colors)
