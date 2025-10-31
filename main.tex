@@ -1,0 +1,167 @@
+\documentclass[11pt,a4paper,twoside]{book}
+
+% Language and encoding
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[croatian,german]{babel}
+
+% Page layout
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{fancyhdr}
+
+% Graphics and colors
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{tikz}
+
+% Lists and tables
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage{longtable}
+
+% Boxes and frames
+\usepackage{tcolorbox}
+\tcbuselibrary{most}
+
+% Fonts and typography
+\usepackage{lmodern}
+\usepackage{microtype}
+
+% Hyperlinks
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=cyan,
+    pdftitle={Hrvatski za Djecu - Croatian for Children},
+    pdfauthor={Werner J.},
+}
+
+% Custom colors
+\definecolor{croatianblue}{RGB}{0,91,165}
+\definecolor{croatianred}{RGB}{255,0,0}
+\definecolor{lightblue}{RGB}{230,240,255}
+\definecolor{lightgreen}{RGB}{230,255,230}
+\definecolor{lightyellow}{RGB}{255,250,205}
+
+% Custom boxes
+\newtcolorbox{vocabulary}{
+    colback=lightblue,
+    colframe=croatianblue,
+    title=Vokabular / Wortschatz,
+    fonttitle=\bfseries,
+}
+
+\newtcolorbox{grammar}{
+    colback=lightgreen,
+    colframe=green!60!black,
+    title=Gramatika / Grammatik,
+    fonttitle=\bfseries,
+}
+
+\newtcolorbox{culture}{
+    colback=lightyellow,
+    colframe=orange!80!black,
+    title=Kultura / Kultur,
+    fonttitle=\bfseries,
+}
+
+\newtcolorbox{exercise}{
+    colback=white,
+    colframe=croatianred,
+    title=Vježba / Übung,
+    fonttitle=\bfseries,
+}
+
+% Header and footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE]{\leftmark}
+\fancyhead[RO]{\rightmark}
+\fancyfoot[C]{\thepage}
+
+% Title information
+\title{\Huge\textbf{Hrvatski za Djecu}\\[0.5cm]
+\Large Croatian for German-Speaking Children\\[0.3cm]
+\large A One-Year Course for Ages 8-11}
+\author{Werner J.}
+\date{\today}
+
+\begin{document}
+
+% Title page
+\maketitle
+
+% Copyright page
+\thispagestyle{empty}
+\vspace*{\fill}
+\begin{center}
+\textcopyright{} 2025 Werner J.\\[0.5cm]
+This work is licensed under the GNU General Public License v3.0\\
+See LICENSE file for details.\\[1cm]
+\textit{Hrvatski za Djecu - Croatian for Children}\\
+A comprehensive one-year course designed for German-speaking students aged 8-11.
+\end{center}
+\vspace*{\fill}
+\clearpage
+
+% Table of contents
+\tableofcontents
+\clearpage
+
+% Preface
+\chapter*{Preface / Vorwort}
+\addcontentsline{toc}{chapter}{Preface / Vorwort}
+
+\section*{To Students / An die Schüler}
+Welcome to \textit{Hrvatski za Djecu}! This book will guide you through an exciting journey of learning Croatian, a beautiful South Slavic language spoken by millions of people in Croatia and around the world.
+
+Willkommen bei \textit{Hrvatski za Djecu}! Dieses Buch führt dich durch eine spannende Reise beim Lernen von Kroatisch, einer wunderschönen südslawischen Sprache, die von Millionen Menschen in Kroatien und auf der ganzen Welt gesprochen wird.
+
+\section*{To Teachers and Parents / An Lehrer und Eltern}
+This course is designed for 5th grade Gymnasium students (ages 8-11) with German as their primary language. The curriculum covers not only language skills but also Croatian culture, history, traditions, geography, and notable people. Each unit is designed for approximately three weeks of instruction.
+
+Dieser Kurs ist für Schüler der 5. Klasse des Gymnasiums (8-11 Jahre) mit Deutsch als Muttersprache konzipiert. Der Lehrplan umfasst nicht nur Sprachkenntnisse, sondern auch kroatische Kultur, Geschichte, Traditionen, Geographie und bemerkenswerte Persönlichkeiten. Jede Einheit ist für etwa drei Wochen Unterricht konzipiert.
+
+\section*{How to Use This Book / Wie man dieses Buch benutzt}
+\begin{itemize}
+    \item Each chapter represents one unit (3 weeks of instruction)
+    \item Vocabulary is presented with German translations
+    \item Grammar explanations are provided in both Croatian and German
+    \item Cultural sections introduce Croatian life and traditions
+    \item Exercises are provided at the end of each section
+    \item Audio materials (referenced in the text) should be used alongside this book
+\end{itemize}
+
+\clearpage
+
+% Main content - Include chapter files
+\input{chapters/unit01_welcome}
+\input{chapters/unit02_family}
+\input{chapters/unit03_colors}
+\input{chapters/unit04_school}
+\input{chapters/unit05_home}
+\input{chapters/unit06_food}
+\input{chapters/unit07_weather}
+\input{chapters/unit08_hobbies}
+\input{chapters/unit09_history}
+\input{chapters/unit10_holidays}
+\input{chapters/unit11_nature}
+\input{chapters/unit12_review}
+
+% Appendices
+\appendix
+\chapter{Grammar Reference / Grammatik-Referenz}
+\input{resources/grammar_reference}
+
+\chapter{Vocabulary List / Wortschatzliste}
+\input{resources/vocabulary_list}
+
+\chapter{Answer Key / Lösungsschlüssel}
+\input{resources/answer_key}
+
+\chapter{Croatian-German / German-Croatian Dictionary}
+\input{resources/dictionary}
+
+\end{document}
