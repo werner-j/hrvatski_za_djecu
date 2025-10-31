@@ -2,6 +2,8 @@
 
 A comprehensive one-year Croatian language course designed for German-speaking 5th grade Gymnasium students (ages 8-11).
 
+> **Quick Start**: New to the project? See [QUICK_START.md](QUICK_START.md) to get up and running in 5 minutes!
+
 ## About This Course
 
 This course provides a complete curriculum for teaching Croatian language while exploring Croatian culture, history, traditions, geography, and notable people. By the end of the year, students should be able to conduct basic conversations and understand simple Croatian.
