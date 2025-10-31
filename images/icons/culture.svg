@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <!-- Croatian checkerboard pattern (šahovnica) icon for Culture box -->
+  <defs>
+    <style>
+      .red-square { fill: #FF0000; }
+      .white-square { fill: #FFFFFF; stroke: #CC6600; stroke-width: 0.5; }
+      .border { stroke: #CC6600; stroke-width: 2; fill: none; }
+    </style>
+  </defs>
+  
+  <!-- Checkerboard pattern (3x3 simplified šahovnica) -->
+  <!-- First row -->
+  <rect x="5" y="5" width="4.67" height="4.67" class="red-square"/>
+  <rect x="9.67" y="5" width="4.67" height="4.67" class="white-square"/>
+  <rect x="14.33" y="5" width="4.67" height="4.67" class="red-square"/>
+  
+  <!-- Second row -->
+  <rect x="5" y="9.67" width="4.67" height="4.67" class="white-square"/>
+  <rect x="9.67" y="9.67" width="4.67" height="4.67" class="red-square"/>
+  <rect x="14.33" y="9.67" width="4.67" height="4.67" class="white-square"/>
+  
+  <!-- Third row -->
+  <rect x="5" y="14.33" width="4.67" height="4.67" class="red-square"/>
+  <rect x="9.67" y="14.33" width="4.67" height="4.67" class="white-square"/>
+  <rect x="14.33" y="14.33" width="4.67" height="4.67" class="red-square"/>
+  
+  <!-- Border around entire pattern -->
+  <rect x="5" y="5" width="14" height="14" class="border" rx="1"/>
+</svg>
