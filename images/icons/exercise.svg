@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <!-- Pencil icon for Exercise box -->
+  <defs>
+    <style>
+      .pencil-main { fill: #FF0000; }
+      .pencil-wood { fill: #CC0000; }
+      .pencil-tip { fill: #330000; }
+      .pencil-eraser { fill: #FFB6C1; }
+      .pencil-outline { stroke: #990000; stroke-width: 1; fill: none; }
+    </style>
+  </defs>
+  
+  <!-- Pencil body -->
+  <path d="M4,20 L9,15 L9,12 L12,9 L15,12 L12,15 L12,18 L7,23 Z" class="pencil-main"/>
+  
+  <!-- Pencil wood (tip section) -->
+  <path d="M12,9 L15,12 L13.5,13.5 L10.5,10.5 Z" class="pencil-wood"/>
+  
+  <!-- Pencil graphite tip -->
+  <path d="M13.5,13.5 L15,12 L17,14 L15.5,15.5 Z" class="pencil-tip"/>
+  
+  <!-- Pencil eraser -->
+  <rect x="3" y="19" width="2" height="5" class="pencil-eraser"/>
+  
+  <!-- Checkmark (written by pencil) -->
+  <path d="M16,7 L18,9 L22,3" stroke="#FF0000" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Pencil outline -->
+  <path d="M4,20 L9,15 L9,12 L12,9 L15,12 L12,15 L12,18 L7,23 Z" class="pencil-outline"/>
+  <path d="M13.5,13.5 L15,12 L17,14 L15.5,15.5 Z" class="pencil-outline"/>
+</svg>
