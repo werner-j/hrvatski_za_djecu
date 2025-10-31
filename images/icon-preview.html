@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hrvatski za Djecu - Icon Preview</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: #f5f5f5;
+        }
+        h1 {
+            color: #005BA5;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 40px;
+        }
+        .icon-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        .icon-card {
+            background: white;
+            border-radius: 8px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .icon-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        .icon-display {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+        }
+        .icon-display img {
+            width: 80px;
+            height: 80px;
+        }
+        .vocabulary-bg { background: #E6F0FF; }
+        .grammar-bg { background: #E6FFE6; }
+        .culture-bg { background: #FFFACD; }
+        .exercise-bg { background: #FFFFFF; border: 2px solid #FF0000; }
+        
+        .icon-name {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .vocabulary-name { color: #005BA5; }
+        .grammar-name { color: #3C783C; }
+        .culture-name { color: #CC6600; }
+        .exercise-name { color: #FF0000; }
+        
+        .icon-description {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        .icon-usage {
+            font-size: 12px;
+            color: #999;
+            font-style: italic;
+        }
+        
+        .color-palette {
+            background: white;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .color-palette h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .colors {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .color-swatch {
+            flex: 1;
+            min-width: 150px;
+            text-align: center;
+        }
+        .color-box {
+            height: 80px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+        }
+        .color-info {
+            font-size: 12px;
+            line-height: 1.5;
+        }
+        .color-name {
+            font-weight: bold;
+            margin-bottom: 3px;
+        }
+        
+        .footer {
+            text-align: center;
+            color: #666;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hrvatski za Djecu</h1>
+    <p class="subtitle">Visual Design System - Icon Preview</p>
+    
+    <div class="color-palette">
+        <h2>Croatian Flag Color Palette</h2>
+        <div class="colors">
+            <div class="color-swatch">
+                <div class="color-box" style="background: #FF0000;"></div>
+                <div class="color-info">
+                    <div class="color-name">Croatian Red</div>
+                    <div>#FF0000</div>
+                    <div>RGB(255, 0, 0)</div>
+                </div>
+            </div>
+            <div class="color-swatch">
+                <div class="color-box" style="background: #FFFFFF; border: 2px solid #000;"></div>
+                <div class="color-info">
+                    <div class="color-name">Croatian White</div>
+                    <div>#FFFFFF</div>
+                    <div>RGB(255, 255, 255)</div>
+                </div>
+            </div>
+            <div class="color-swatch">
+                <div class="color-box" style="background: #005BA5;"></div>
+                <div class="color-info">
+                    <div class="color-name">Croatian Blue</div>
+                    <div>#005BA5</div>
+                    <div>RGB(0, 91, 165)</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <h2 style="color: #333; margin-bottom: 20px;">Box Type Icons</h2>
+    <div class="icon-grid">
+        <div class="icon-card">
+            <div class="icon-display vocabulary-bg">
+                <img src="icons/vocabulary.svg" alt="Vocabulary Icon">
+            </div>
+            <div class="icon-name vocabulary-name">📚 Vokabular / Wortschatz</div>
+            <div class="icon-description">Vocabulary Box</div>
+            <div class="icon-usage">For introducing new words and phrases</div>
+        </div>
+        
+        <div class="icon-card">
+            <div class="icon-display grammar-bg">
+                <img src="icons/grammar.svg" alt="Grammar Icon">
+            </div>
+            <div class="icon-name grammar-name">📝 Gramatika / Grammatik</div>
+            <div class="icon-description">Grammar Box</div>
+            <div class="icon-usage">For explaining grammatical concepts</div>
+        </div>
+        
+        <div class="icon-card">
+            <div class="icon-display culture-bg">
+                <img src="icons/culture.svg" alt="Culture Icon">
+            </div>
+            <div class="icon-name culture-name">🏛️ Kultura / Kultur</div>
+            <div class="icon-description">Culture Box</div>
+            <div class="icon-usage">For sharing Croatian cultural information</div>
+        </div>
+        
+        <div class="icon-card">
+            <div class="icon-display exercise-bg">
+                <img src="icons/exercise.svg" alt="Exercise Icon">
+            </div>
+            <div class="icon-name exercise-name">✏️ Vježba / Übung</div>
+            <div class="icon-description">Exercise Box</div>
+            <div class="icon-usage">For practice activities and exercises</div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p><strong>Hrvatski za Djecu</strong> - Croatian for German-Speaking Children</p>
+        <p>A comprehensive one-year Croatian language course for ages 8-11</p>
+        <p style="margin-top: 10px;"><em>Sretno učenje! / Viel Erfolg beim Lernen!</em></p>
+    </div>
+</body>
+</html>
