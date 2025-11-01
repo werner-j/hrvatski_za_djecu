@@ -2,10 +2,13 @@
 
 % Language and encoding (for XeLaTeX)
 \usepackage{fontspec}
-\usepackage[croatian,german]{babel}
+% Note: Using only 'german' for babel as the document is primarily in German
+% with Croatian words embedded. The 'croatian' option is not needed and
+% causes compatibility issues with some LaTeX distributions.
+\usepackage[german]{babel}
 
 % Page layout
-\usepackage[margin=2.5cm]{geometry}
+\usepackage[margin=2.5cm, headheight=14pt]{geometry}
 \usepackage{fancyhdr}
 
 % Graphics and colors
@@ -25,6 +28,10 @@
 % Fonts and typography
 \usepackage{lmodern}
 \usepackage{microtype}
+
+% URL package for better path handling
+\usepackage{url}
+\def\UrlBreaks{\do\/\do-\do_}
 
 % Hyperlinks
 \usepackage{hyperref}
@@ -50,6 +57,7 @@
     colframe=croatianblue,
     title=Vokabular / Wortschatz,
     fonttitle=\bfseries,
+    breakable,
 }
 
 \newtcolorbox{grammar}{
@@ -57,6 +65,7 @@
     colframe=green!60!black,
     title=Gramatika / Grammatik,
     fonttitle=\bfseries,
+    breakable,
 }
 
 \newtcolorbox{culture}{
@@ -64,6 +73,7 @@
     colframe=orange!80!black,
     title=Kultura / Kultur,
     fonttitle=\bfseries,
+    breakable,
 }
 
 \newtcolorbox{exercise}{
@@ -71,6 +81,7 @@
     colframe=croatianred,
     title=Vježba / Übung,
     fonttitle=\bfseries,
+    breakable,
 }
 
 % Header and footer
