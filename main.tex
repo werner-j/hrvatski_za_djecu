@@ -2,10 +2,10 @@
 
 % Language and encoding (for XeLaTeX)
 \usepackage{fontspec}
-\usepackage[croatian,german]{babel}
+\usepackage[german]{babel}
 
 % Page layout
-\usepackage[margin=2.5cm]{geometry}
+\usepackage[margin=2.5cm, headheight=14pt]{geometry}
 \usepackage{fancyhdr}
 
 % Graphics and colors
@@ -50,6 +50,7 @@
     colframe=croatianblue,
     title=Vokabular / Wortschatz,
     fonttitle=\bfseries,
+    breakable,
 }
 
 \newtcolorbox{grammar}{
@@ -57,6 +58,7 @@
     colframe=green!60!black,
     title=Gramatika / Grammatik,
     fonttitle=\bfseries,
+    breakable,
 }
 
 \newtcolorbox{culture}{
@@ -64,6 +66,7 @@
     colframe=orange!80!black,
     title=Kultura / Kultur,
     fonttitle=\bfseries,
+    breakable,
 }
 
 \newtcolorbox{exercise}{
@@ -71,6 +74,7 @@
     colframe=croatianred,
     title=Vježba / Übung,
     fonttitle=\bfseries,
+    breakable,
 }
 
 % Header and footer
